@@ -1,0 +1,25 @@
+﻿codigo_rastreio,status_analise,volume_ml,doadora,banco
+ML-2026-00001,APROVADO,317,Ana Souza,Banco de Leite Campinas
+ML-2026-00002,APROVADO,454,Beatriz Pereira,Banco de Leite ABC
+ML-2026-00003,APROVADO,591,Camila Nascimento,Posto de Coleta Norte
+ML-2026-00004,EM_ANALISE,728,Daniela Oliveira,Banco de Leite Zona Leste
+ML-2026-00005,APROVADO,865,Eduarda Costa,Banco de Leite Osasco
+ML-2026-00006,APROVADO,282,Fernanda Almeida,Posto de Coleta Centro
+ML-2026-00007,DESCARTADO,419,Gabriela Santos,Banco de Leite Vila Mariana
+ML-2026-00008,EM_ANALISE,556,Helena Lima,Banco de Leite Guarulhos
+ML-2026-00009,APROVADO,693,Isabela Rodrigues,Banco de Leite Sao Bernardo
+ML-2026-00010,APROVADO,830,Juliana Silva,Banco de Leite Hospital Central
+ML-2026-00011,APROVADO,247,Larissa Souza,Banco de Leite Campinas
+ML-2026-00012,EM_ANALISE,384,Mariana Pereira,Banco de Leite ABC
+ML-2026-00013,APROVADO,521,Natalia Nascimento,Posto de Coleta Norte
+ML-2026-00014,APROVADO,658,Patricia Oliveira,Banco de Leite Zona Leste
+ML-2026-00015,APROVADO,795,Renata Costa,Banco de Leite Osasco
+ML-2026-00016,EM_ANALISE,212,Sabrina Almeida,Posto de Coleta Centro
+ML-2026-00017,APROVADO,349,Tatiane Santos,Banco de Leite Vila Mariana
+ML-2026-00018,APROVADO,486,Vanessa Lima,Banco de Leite Guarulhos
+ML-2026-00019,DESCARTADO,623,Ana Souza,Banco de Leite Vila Mariana
+ML-2026-00020,EM_ANALISE,760,Beatriz Pereira,Banco de Leite Guarulhos
+ML-2026-00021,APROVADO,897,Camila Nascimento,Banco de Leite Sao Bernardo
+ML-2026-00022,APROVADO,314,Daniela Oliveira,Banco de Leite Hospital Central
+ML-2026-00023,APROVADO,451,Eduarda Costa,Banco de Leite Campinas
+ML-2026-00024,EM_ANALISE,588,Fernanda Almeida,Banco de Leite ABC

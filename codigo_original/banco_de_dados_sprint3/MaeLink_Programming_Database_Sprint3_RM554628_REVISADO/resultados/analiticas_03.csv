@@ -1,0 +1,11 @@
+﻿id_banco,nome,agendas_concluidas,doacoes_registradas,taxa_conversao_pct
+2,Banco de Leite Vila Mariana,3,3,100.0
+4,Banco de Leite Campinas,3,3,100.0
+5,Banco de Leite Guarulhos,3,3,100.0
+7,Banco de Leite ABC,3,3,100.0
+1,Banco de Leite Hospital Central,2,2,100.0
+3,Banco de Leite Zona Leste,2,2,100.0
+6,Banco de Leite Osasco,2,2,100.0
+8,Banco de Leite Sao Bernardo,2,2,100.0
+9,Posto de Coleta Centro,2,2,100.0
+10,Posto de Coleta Norte,2,2,100.0

@@ -1,0 +1,11 @@
+﻿id_banco,nome,quantidade_doacoes,volume_valido_ml,volume_medio_ml
+5,Banco de Leite Guarulhos,3,1802,600.67
+6,Banco de Leite Osasco,2,1660,830.0
+8,Banco de Leite Sao Bernardo,2,1590,795.0
+7,Banco de Leite ABC,3,1426,475.33
+3,Banco de Leite Zona Leste,2,1386,693.0
+1,Banco de Leite Hospital Central,2,1144,572.0
+10,Posto de Coleta Norte,2,1112,556.0
+4,Banco de Leite Campinas,3,1015,338.33
+9,Posto de Coleta Centro,2,494,247.0
+2,Banco de Leite Vila Mariana,3,349,463.67

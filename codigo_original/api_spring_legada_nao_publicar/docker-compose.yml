@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: maelink-postgres
+    environment:
+      POSTGRES_DB: maelink
+      POSTGRES_USER: maelink
+      POSTGRES_PASSWORD: maelink
+    ports:
+      - "5432:5432"
+    volumes:
+      - maelink_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U maelink -d maelink"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: .
+    container_name: maelink-api
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: maelink
+      DB_USER: maelink
+      DB_PASSWORD: maelink
+    ports:
+      - "8080:8080"
+
+volumes:
+  maelink_pgdata:

@@ -1,0 +1,31 @@
+﻿id_triagem,nome,cidade,data_triagem,resultado,profissional_responsavel
+1,Ana Souza,Sao Paulo,2026-02-03 01:00:00,APTA,Enf. Carla Mendes
+2,Beatriz Pereira,Campinas,2026-02-05 02:00:00,APTA,Enf. Rafael Souza
+3,Camila Nascimento,Guarulhos,2026-02-07 03:00:00,APTA,Dra. Marina Alves
+4,Daniela Oliveira,Osasco,2026-02-09 04:00:00,APTA,Enf. Luana Rocha
+5,Eduarda Costa,Santo Andre,2026-02-11 05:00:00,APTA,Enf. Carla Mendes
+6,Fernanda Almeida,Sao Bernardo do Campo,2026-02-13 06:00:00,APTA,Enf. Rafael Souza
+7,Gabriela Santos,Sao Paulo,2026-02-15 00:00:00,APTA,Dra. Marina Alves
+8,Helena Lima,Campinas,2026-02-17 01:00:00,APTA,Enf. Luana Rocha
+9,Isabela Rodrigues,Guarulhos,2026-02-19 02:00:00,APTA,Enf. Carla Mendes
+10,Juliana Silva,Osasco,2026-02-21 03:00:00,APTA,Enf. Rafael Souza
+11,Larissa Souza,Santo Andre,2026-02-23 04:00:00,APTA,Dra. Marina Alves
+12,Mariana Pereira,Sao Bernardo do Campo,2026-02-25 05:00:00,APTA,Enf. Luana Rocha
+13,Natalia Nascimento,Sao Paulo,2026-02-27 06:00:00,APTA,Enf. Carla Mendes
+14,Patricia Oliveira,Campinas,2026-03-01 00:00:00,APTA,Enf. Rafael Souza
+15,Renata Costa,Guarulhos,2026-03-03 01:00:00,APTA,Dra. Marina Alves
+16,Sabrina Almeida,Osasco,2026-03-05 02:00:00,APTA,Enf. Luana Rocha
+17,Tatiane Santos,Santo Andre,2026-03-07 03:00:00,APTA,Enf. Carla Mendes
+18,Vanessa Lima,Sao Bernardo do Campo,2026-03-09 04:00:00,APTA,Enf. Rafael Souza
+19,Aline Rodrigues,Sao Paulo,2026-03-11 05:00:00,APTA,Dra. Marina Alves
+20,Bruna Silva,Campinas,2026-03-13 06:00:00,APTA,Enf. Luana Rocha
+21,Carolina Souza,Guarulhos,2026-03-15 00:00:00,APTA,Enf. Carla Mendes
+22,Debora Pereira,Osasco,2026-03-17 01:00:00,APTA,Enf. Rafael Souza
+23,Elaine Nascimento,Santo Andre,2026-03-19 02:00:00,NAO_APTA,Dra. Marina Alves
+24,Flavia Oliveira,Sao Bernardo do Campo,2026-03-21 03:00:00,NAO_APTA,Enf. Luana Rocha
+25,Giovana Costa,Sao Paulo,2026-03-23 04:00:00,NAO_APTA,Enf. Carla Mendes
+26,Heloisa Almeida,Campinas,2026-03-25 05:00:00,NAO_APTA,Enf. Rafael Souza
+27,Ingrid Santos,Guarulhos,2026-03-27 06:00:00,NAO_APTA,Dra. Marina Alves
+28,Jessica Lima,Osasco,2026-03-29 00:00:00,PENDENTE,Enf. Luana Rocha
+29,Karina Rodrigues,Santo Andre,2026-03-31 01:00:00,PENDENTE,Enf. Carla Mendes
+30,Leticia Silva,Sao Bernardo do Campo,2026-04-02 02:00:00,PENDENTE,Enf. Rafael Souza

@@ -1,0 +1,307 @@
+{
+  "source": "https://www.saude.sp.gov.br/resources/ses/perfil/profissional-da-saude/homepage/grupo-tecnico-de-acoes-estrategicas-gtae/saude-da-crianca/bancos_de_sangue_sp_e_interior.pdf",
+  "source_year": 2016,
+  "disclaimer": "Relação histórica da Secretaria de Saúde de SP de 2016. Não representa convênio MãeLink, funcionamento atual, nem horários para agendamento. Confirme diretamente com a unidade e rede oficial.",
+  "units": [
+    {
+      "name": "Hospital Maternidade Leonor Mendes de Barros",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Av. Celso Garcia, 2477"
+    },
+    {
+      "name": "Hospital Israelita Albert Einstein – Banco de Leite",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Av. Albert Einstein, 627"
+    },
+    {
+      "name": "Hospital Municipal Regional de Campo Limpo – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Estrada de Itapecerica, 1661"
+    },
+    {
+      "name": "Hospital Municipal de Ermelino Matarazzo – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Alameda Rodrigo de Brum, 1989"
+    },
+    {
+      "name": "Hospital Maternidade de Interlagos – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua Guaiúba, 312"
+    },
+    {
+      "name": "Hospital Ipiranga – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Av. Nazaré, 28"
+    },
+    {
+      "name": "Hospital Geral de Pedreira – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua João Francisco de Moura, 251"
+    },
+    {
+      "name": "Hospital Regional Sul – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua Senador Flaquer, 239"
+    },
+    {
+      "name": "Santa Casa de São Paulo – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua Dr. Cesário Mota Júnior, 112"
+    },
+    {
+      "name": "Hospital Maternidade Santa Joana – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua Dr. Eduardo Amaro, 157"
+    },
+    {
+      "name": "Hospital e Maternidade São Luiz Anália Franco – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua Francisco Marengo, 1312"
+    },
+    {
+      "name": "Hospital e Maternidade São Luiz Itaim – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua Dr. Alceu de Campos Rodrigues, 95"
+    },
+    {
+      "name": "Hospital do Servidor Público Estadual – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua Pedro de Toledo, 1800"
+    },
+    {
+      "name": "Hospital São Paulo / Unifesp – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Rua Dr. Diogo de Faria, 395"
+    },
+    {
+      "name": "Hospital Universitário USP – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Av. Professor Lineu Prestes, 2565"
+    },
+    {
+      "name": "Hospital Maternidade Escola Vila Nova Cachoeirinha – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Av. Deputado Emílio Carlos, 3100"
+    },
+    {
+      "name": "Hospital Geral de Vila Penteado – BLH",
+      "city": "São Paulo",
+      "uf": "SP",
+      "address": "Av. Ministro Petrônio Portela, 1642"
+    },
+    {
+      "name": "Hospital Municipal de Barueri – BLH",
+      "city": "Barueri",
+      "uf": "SP",
+      "address": "Rua Ângela Mirella, 354"
+    },
+    {
+      "name": "Hospital Regional de Cotia – BLH",
+      "city": "Cotia",
+      "uf": "SP",
+      "address": "Av. Dr. Odair Pacheco Pedroso, 171"
+    },
+    {
+      "name": "Banco de Leite Humano Municipal de Guarulhos",
+      "city": "Guarulhos",
+      "uf": "SP",
+      "address": "Rua Otávio Forghieri, 70"
+    },
+    {
+      "name": "Hospital Geral de Itapecerica da Serra – BLH",
+      "city": "Itapecerica da Serra",
+      "uf": "SP",
+      "address": "Av. Prof. Guacy Fernandez Domingues, 200"
+    },
+    {
+      "name": "Hospital Geral de Itapevi – BLH",
+      "city": "Itapevi",
+      "uf": "SP",
+      "address": "Rua Ari Barroso, s/n"
+    },
+    {
+      "name": "Hospital de Mogi das Cruzes – BLH",
+      "city": "Mogi das Cruzes",
+      "uf": "SP",
+      "address": "Rua Manoel de Oliveira, 30"
+    },
+    {
+      "name": "Hospital da Mulher Maria José dos Santos Stein – BLH",
+      "city": "Santo André",
+      "uf": "SP",
+      "address": "Rua América do Sul, 285"
+    },
+    {
+      "name": "Hospital Maternidade Amador Aguiar – BLH",
+      "city": "Osasco",
+      "uf": "SP",
+      "address": "Av. Getúlio Vargas, 1260"
+    },
+    {
+      "name": "Hospital Mário Covas de Santo André – BLH",
+      "city": "Santo André",
+      "uf": "SP",
+      "address": "Rua Dr. Henrique Calderazzo, 321"
+    },
+    {
+      "name": "Hospital Municipal Universitário São Bernardo do Campo – BLH",
+      "city": "São Bernardo do Campo",
+      "uf": "SP",
+      "address": "Av. Bispo César D´ Corso Filho, 161"
+    },
+    {
+      "name": "Hospital das Clínicas de Ribeirão Preto – BLH",
+      "city": "Ribeirão Preto",
+      "uf": "SP",
+      "address": "Av. Santa Luzia, 387"
+    },
+    {
+      "name": "Banco de Leite Humano de Araçatuba",
+      "city": "Araçatuba",
+      "uf": "SP",
+      "address": "Rua Sacadura Cabral, 471"
+    },
+    {
+      "name": "Hospital Regional de Assis – BLH",
+      "city": "Assis",
+      "uf": "SP",
+      "address": "Praça Symphrônio Alves Santos, s/n"
+    },
+    {
+      "name": "Banco de Leite Humano de Bauru",
+      "city": "Bauru",
+      "uf": "SP",
+      "address": "Praça das Cerejeiras, 1-40"
+    },
+    {
+      "name": "Unesp Botucatu – Banco de Leite Humano",
+      "city": "Botucatu",
+      "uf": "SP",
+      "address": "Distrito de Rubião Júnior, s/n"
+    },
+    {
+      "name": "CAISM / Unicamp – BLH",
+      "city": "Campinas",
+      "uf": "SP",
+      "address": "Rua Alexander Fleming, 101"
+    },
+    {
+      "name": "Centro de Lactação – BLH de Campinas",
+      "city": "Campinas",
+      "uf": "SP",
+      "address": "Av. Orosimbo Maia, 165"
+    },
+    {
+      "name": "Hospital Padre Albino – BLH",
+      "city": "Catanduva",
+      "uf": "SP",
+      "address": "Rua Belém, 519"
+    },
+    {
+      "name": "Santa Casa de Misericórdia de Franca – BLH",
+      "city": "Franca",
+      "uf": "SP",
+      "address": "Praça Dom Pedro II, 1826"
+    },
+    {
+      "name": "Hospital Municipal de Itapira – BLH",
+      "city": "Itapira",
+      "uf": "SP",
+      "address": "Rua Reverendo Alfredo Guimarães, 111"
+    },
+    {
+      "name": "Santa Casa de Jaú – BLH",
+      "city": "Jaú",
+      "uf": "SP",
+      "address": "Rua Riachuelo, 1073"
+    },
+    {
+      "name": "Hospital Universitário de Jundiaí – BLH",
+      "city": "Jundiaí",
+      "uf": "SP",
+      "address": "Av. Henrique Andrés, 547"
+    },
+    {
+      "name": "Santa Casa de Limeira – BLH",
+      "city": "Limeira",
+      "uf": "SP",
+      "address": "Av. Antônio Ometto, 675"
+    },
+    {
+      "name": "Banco de Leite Humano de Marília",
+      "city": "Marília",
+      "uf": "SP",
+      "address": "Av. Santo Antônio, 136"
+    },
+    {
+      "name": "Centro de Saúde Osvaldo Cruz – BLH",
+      "city": "Osvaldo Cruz",
+      "uf": "SP",
+      "address": "Av. Presidente Kennedy, 686"
+    },
+    {
+      "name": "Banco de Leite Humano de Ourinhos",
+      "city": "Ourinhos",
+      "uf": "SP",
+      "address": "Rua dos Expedicionários, 421"
+    },
+    {
+      "name": "Santa Casa de Penápolis – BLH",
+      "city": "Penápolis",
+      "uf": "SP",
+      "address": "Av. Santa Casa, 566"
+    },
+    {
+      "name": "Hospital Municipal de Peruíbe – BLH",
+      "city": "Peruíbe",
+      "uf": "SP",
+      "address": "Rua Rosa Gatti Fortuna, 80"
+    },
+    {
+      "name": "Banco de Leite Humano de Piracicaba",
+      "city": "Piracicaba",
+      "uf": "SP",
+      "address": "Av. Barão de Valença, 716"
+    },
+    {
+      "name": "Banco de Leite Humano de Presidente Prudente",
+      "city": "Presidente Prudente",
+      "uf": "SP",
+      "address": "Av. Cel. José Soares Marcondes, 2357"
+    },
+    {
+      "name": "Banco de Leite Humano de Rio Claro",
+      "city": "Rio Claro",
+      "uf": "SP",
+      "address": "Rua 2, 297"
+    },
+    {
+      "name": "Hospital Guilherme Álvaro – BLH",
+      "city": "Santos",
+      "uf": "SP",
+      "address": "Rua Osvaldo Cruz, 197"
+    },
+    {
+      "name": "Banco de Leite Humano de São Carlos",
+      "city": "São Carlos",
+      "uf": "SP",
+      "address": "Rua Paulino Botelho de Abreu Sampaio, 573"
+    }
+  ]
+}

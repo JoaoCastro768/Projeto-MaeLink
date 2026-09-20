@@ -1,0 +1,11 @@
+﻿id_notificacao,id_usuario,canal,status,mensagem
+3,3,EMAIL,PENDENTE,Atualizacao MaeLink #03: acompanhamento da jornada de doacao.
+6,6,WHATSAPP,FALHA,Atualizacao MaeLink #06: acompanhamento da jornada de doacao.
+9,9,PUSH,PENDENTE,Atualizacao MaeLink #09: acompanhamento da jornada de doacao.
+12,12,SMS,FALHA,Atualizacao MaeLink #12: acompanhamento da jornada de doacao.
+15,15,EMAIL,PENDENTE,Atualizacao MaeLink #15: acompanhamento da jornada de doacao.
+18,3,WHATSAPP,FALHA,Atualizacao MaeLink #18: acompanhamento da jornada de doacao.
+21,6,PUSH,PENDENTE,Atualizacao MaeLink #21: acompanhamento da jornada de doacao.
+24,9,SMS,FALHA,Atualizacao MaeLink #24: acompanhamento da jornada de doacao.
+27,12,EMAIL,PENDENTE,Atualizacao MaeLink #27: acompanhamento da jornada de doacao.
+30,15,WHATSAPP,FALHA,Atualizacao MaeLink #30: acompanhamento da jornada de doacao.

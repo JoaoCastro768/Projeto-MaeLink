@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: maelink-api
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:maelink}
+    username: ${DB_USER:maelink}
+    password: ${DB_PASSWORD:maelink}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: ${PORT:8080}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+info:
+  app:
+    name: MãeLink API
+    version: v1
+    discipline: Microservice and Web Engineering & IT Services
+
+maelink:
+  jwt:
+    secret: ${JWT_SECRET:maelink-academic-demo-secret-key-2026-fiap-554628}
+    expiration-minutes: ${JWT_EXPIRATION_MINUTES:60}

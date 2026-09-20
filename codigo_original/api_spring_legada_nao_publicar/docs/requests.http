@@ -1,0 +1,111 @@
+### MãeLink API - exemplos de requisições
+@baseUrl = http://localhost:8080/api/v1
+
+### Health
+GET http://localhost:8080/actuator/health
+
+### Listar bancos
+GET {{baseUrl}}/bancos?cidade=São Paulo
+
+### Criar doadora
+POST {{baseUrl}}/doadoras
+Content-Type: application/json
+
+{
+  "nome": "Joana Silva",
+  "contato": "joana.silva@example.com",
+  "cidade": "São Paulo",
+  "consentimentoLgpd": true
+}
+
+### Criar triagem para doadora 1
+POST {{baseUrl}}/triagens
+Content-Type: application/json
+
+{
+  "doadoraId": 1,
+  "respostas": {
+    "amamentando": "sim",
+    "excessoLeite": "sim",
+    "aceitaContato": "sim"
+  }
+}
+
+### Resultado da triagem 1
+GET {{baseUrl}}/triagens/1/resultado
+
+### Criar agendamento (ajuste a data para uma data futura)
+POST {{baseUrl}}/agendamentos
+Content-Type: application/json
+
+{
+  "doadoraId": 1,
+  "bancoId": 1,
+  "data": "2027-01-20T10:00:00",
+  "tipoAtendimento": "COLETA_DOMICILIAR",
+  "observacao": "Retirada residencial"
+}
+
+### Confirmar agendamento 2 antes de abrir a doação
+PATCH {{baseUrl}}/agendamentos/2/status
+Content-Type: application/json
+
+{
+  "status": "CONFIRMADO"
+}
+
+### Criar doação para um agendamento novo
+POST {{baseUrl}}/doacoes
+Content-Type: application/json
+
+{
+  "agendamentoId": 2,
+  "volume": 150.00
+}
+
+### Atualizar status da doação 1
+PATCH {{baseUrl}}/doacoes/1/status
+Content-Type: application/json
+
+{
+  "status": "RECEBIDA",
+  "volume": 180.00
+}
+
+### Timeline
+GET {{baseUrl}}/doacoes/1/timeline
+
+### Enviar notificação
+POST {{baseUrl}}/notificacoes
+Content-Type: application/json
+
+{
+  "usuarioId": 1,
+  "canal": "EMAIL",
+  "mensagem": "Sua solicitação foi atualizada."
+}
+
+### Auditoria
+GET {{baseUrl}}/auditorias?page=0&size=20
+
+### Conteúdos
+GET {{baseUrl}}/conteudos
+
+### Login demonstrativo
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "identificador": "ana.martins@example.com",
+  "senha": "demo123"
+}
+
+### Validar JWT
+# 1) Execute o login acima e copie o accessToken retornado.
+@token = COLE_O_ACCESS_TOKEN_AQUI
+GET {{baseUrl}}/auth/validate
+Authorization: Bearer {{token}}
+
+### Renovar JWT válido
+POST {{baseUrl}}/auth/refresh
+Authorization: Bearer {{token}}

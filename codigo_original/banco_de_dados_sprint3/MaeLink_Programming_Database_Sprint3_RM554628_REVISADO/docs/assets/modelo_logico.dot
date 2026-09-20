@@ -1,0 +1,25 @@
+digraph ERD {
+  graph [rankdir=LR, bgcolor="white", pad="0.2", nodesep="0.35", ranksep="0.7", fontname="Arial"];
+  node [shape=record, fontname="Arial", fontsize=9, color="#146b6f", penwidth=1.4, style="rounded,filled", fillcolor="#f2fbfb"];
+  edge [fontname="Arial", fontsize=8, color="#4b6570", arrowsize=0.7];
+
+  usuario [label="{USUARIO|PK id_usuario\lnome\lemail UNIQUE\lperfil\lsenha_hash\lativo\lultimo_acesso\l}"];
+  doadora [label="{DOADORA|PK id_doadora\lnome\ltelefone\lcpf_hash UNIQUE\lcep\lcidade/uf\lconsentimento_lgpd\lstatus\ldata_cadastro\l}"];
+  banco [label="{BANCO_LEITE|PK id_banco\lnome\lendereco\lcidade/uf\lcapacidade_ml\lestoque_atual_ml\lcontato\lativo\l}"];
+  triagem [label="{TRIAGEM|PK id_triagem\lFK id_doadora\ldata_triagem\lresultado\lobservacoes\lprofissional_responsavel\l}"];
+  agenda [label="{AGENDAMENTO|PK id_agendamento\lFK id_doadora\lFK id_banco\ldata_hora\ltipo_atendimento\lstatus\l}"];
+  doacao [label="{DOACAO|PK id_doacao\lFK id_agendamento UNIQUE\lFK id_doadora\lFK id_banco\lvolume_ml\ldata_coleta\lstatus\ltemperatura_recebimento\l}"];
+  lote [label="{LOTE_LEITE|PK id_lote\lFK id_doacao\lcodigo_rastreio UNIQUE\ldata_validade\lstatus_analise\lresultado_microbiologico\l}"];
+  notif [label="{NOTIFICACAO|PK id_notificacao\lFK id_usuario\lmensagem\lcanal\lstatus\ldata_envio\l}"];
+  audit [label="{AUDITORIA|PK id_auditoria\lFK id_usuario\ltabela\loperacao\lregistro_id\ldata_hora\ldetalhe\l}"];
+
+  doadora -> triagem [label="1 : 0..N"];
+  doadora -> agenda [label="1 : 0..N"];
+  banco -> agenda [label="1 : 0..N"];
+  agenda -> doacao [label="1 : 0..1"];
+  doadora -> doacao [label="1 : 0..N"];
+  banco -> doacao [label="1 : 0..N"];
+  doacao -> lote [label="1 : 0..N"];
+  usuario -> notif [label="1 : 0..N"];
+  usuario -> audit [label="1 : 0..N"];
+}

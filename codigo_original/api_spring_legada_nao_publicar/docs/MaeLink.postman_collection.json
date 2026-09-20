@@ -1,0 +1,278 @@
+{
+  "info": {
+    "_postman_id": "1af338bf-cbed-4a59-a44a-554628000001",
+    "name": "MãeLink API - Sprint 3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080/api/v1"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Auth - Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const body = pm.response.json();",
+              "if (body.accessToken) pm.collectionVariables.set('token', body.accessToken);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"identificador\": \"ana.martins@example.com\",\n  \"senha\": \"demo123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/auth/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Auth - Validar token",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/auth/validate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "validate"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Auth - Refresh token",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const body = pm.response.json();",
+              "if (body.accessToken) pm.collectionVariables.set('token', body.accessToken);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/auth/refresh",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "refresh"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Listar bancos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/bancos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "bancos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar doadora",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/doadoras",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "doadoras"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Joana Silva\",\n  \"contato\": \"joana.silva@example.com\",\n  \"cidade\": \"São Paulo\",\n  \"consentimentoLgpd\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Criar triagem",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/triagens",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "triagens"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"doadoraId\": 1,\n  \"respostas\": {\n    \"amamentando\": \"sim\",\n    \"excessoLeite\": \"sim\",\n    \"aceitaContato\": \"sim\"\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Resultado triagem",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/triagens/1/resultado",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "triagens",
+            "1",
+            "resultado"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar agendamento",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/agendamentos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "agendamentos"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"doadoraId\": 1,\n  \"bancoId\": 1,\n  \"data\": \"2027-01-20T10:00:00\",\n  \"tipoAtendimento\": \"COLETA_DOMICILIAR\",\n  \"observacao\": \"Retirada residencial\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Timeline doacao",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/doacoes/1/timeline",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "doacoes",
+            "1",
+            "timeline"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Auditoria",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/auditorias",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auditorias"
+          ]
+        }
+      }
+    }
+  ]
+}
